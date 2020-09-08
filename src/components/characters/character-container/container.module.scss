@@ -1,0 +1,22 @@
+.container {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+
+  &__character {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin: 30px 9vh 30px 9vh;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: auto auto;
+      grid-column-gap: 15px;
+    }
+    
+    @media screen and (max-width: 420px) {
+      grid-template-columns: auto;
+    }
+  }
+}
